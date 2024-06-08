@@ -1,0 +1,31 @@
+@isTest
+public class TestVerifyDate {
+@isTest
+  static void testCheckDatesWithin30Days() {
+    Date date1 = Date.newInstance(2023, 6, 1);
+    Date date2 = Date.newInstance(2023, 6, 15);
+    
+    Date result = VerifyDate.CheckDates(date1, date2);
+    System.assertEquals(date2, result, 'Date2 within 30 days should be returned');
+  }
+
+  @isTest
+  static void testCheckDatesOutside30Days() {
+    Date date1 = Date.newInstance(2023, 6, 1);
+    Date date2 = Date.newInstance(2023, 7, 15);
+    
+    Date expectedDate = Date.newInstance(2023, 6, 30); // End of June
+    Date result = VerifyDate.CheckDates(date1, date2);
+    System.assertEquals(expectedDate, result, 'Date2 outside 30 days should return end of the month');
+  }
+
+  @isTest
+  static void testCheckDatesInThePast() {
+    Date date1 = Date.newInstance(2023, 6, 1);
+    Date date2 = Date.newInstance(2023, 5, 15);
+    
+    Date expectedDate = Date.newInstance(2023, 6, 30); // End of June
+    Date result = VerifyDate.CheckDates(date1, date2);
+    System.assertEquals(expectedDate, result, 'Past date2 should return end of the month');
+  }
+}
