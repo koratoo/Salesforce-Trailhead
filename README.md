@@ -18,7 +18,7 @@
 > https://blog.naver.com/kuma9009/223472885755
 > 2. SOQL, SOSL 쿼리 작성하기
 > https://blog.naver.com/kuma9009/223472901148
-> 3. Create and Test a Trigger  
+> 3. Create and Test a Trigger
 > https://blog.naver.com/kuma9009/223474922537
 > 4. Apex 트리거 시작하기
 > https://blog.naver.com/kuma9009/223475858222
