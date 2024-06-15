@@ -1,4 +1,5 @@
 # Salesforce-Trailhead
+![image](https://github.com/koratoo/Salesforce-Trailhead/assets/96603612/18185e34-8179-44e6-99ee-afe3671687b5)
 
 ## 기록일지
 
